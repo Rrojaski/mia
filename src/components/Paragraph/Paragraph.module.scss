@@ -1,0 +1,15 @@
+@import "../../variable.scss";
+
+.Paragraph {
+  font-size: 1.6rem;
+}
+
+.lg {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.md {
+  color: inherit;
+  font-weight: 700;
+  line-height: 2.5rem;
+}

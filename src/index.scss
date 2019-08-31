@@ -1,0 +1,47 @@
+@import "./variable.scss";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 2.7rem;
+  color: $grey;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  *::selection {
+    background: $primary-color;
+    color: $white;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+}

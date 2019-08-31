@@ -1,0 +1,145 @@
+@import "../../variable.scss";
+
+.Menu {
+  top: 3rem;
+  right: 3rem;
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.menu__line {
+  transition: all 0.2s;
+  border-bottom: 0.2rem solid #000;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu__overlay {
+  transition: all 1s;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 5rem;
+  right: 5rem;
+  content: " ";
+  display: block;
+  position: fixed;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(120, 108, 232, 1),
+    rgba(97, 81, 248, 1)
+  );
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.menu__overlay--cover {
+  transform: scale(2000);
+}
+.menu__line__top {
+  top: 29%;
+}
+.menu__line__middle {
+  top: 50%;
+}
+.menu__line__bottom {
+  top: 70%;
+}
+/* on toggle classes */
+.menu__line__top--rotate {
+  top: 70%;
+  left: 12%;
+  transform: rotate(125deg) translateX(-50%);
+}
+.menu__line__middle--hide {
+  transform: rotate(180deg);
+  width: 0;
+}
+.menu__line__bottom--rotate {
+  top: 28%;
+  left: 12%;
+  transform: rotate(-125deg) translateX(-50%);
+}
+
+//menu box
+
+.menu__box {
+  display: none;
+  text-align: center;
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu__box--slide {
+  animation: slideLeft 1s;
+}
+.menu__box--hide {
+  display: none;
+}
+.menu__box--display {
+  animation: slideRight 1s;
+  display: block;
+}
+.menu__box__list {
+  list-style-type: none;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.menu__box__item {
+  transition: all 0.5s;
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  > a {
+    padding: 1rem 2rem;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $white;
+    text-decoration: none;
+    background-size: 220%;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+  }
+  &:hover > a {
+    background-position: 100%;
+    color: $primary-color;
+  }
+  &:hover {
+    transform: translateX(1rem);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20rem) translate(-50%, -50%);
+  }
+  70% {
+    transform: translateX(2rem) translate(-50%, -50%);
+  }
+  100% {
+    transform: translateX(0) translate(-50%, -50%);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0) translate(-50%, -50%);
+  }
+  70% {
+    transform: translateX(2rem) translate(-50%, -50%);
+  }
+  100% {
+    transform: translateX(-20rem) translate(-50%, -50%);
+  }
+}

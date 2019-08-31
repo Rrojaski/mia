@@ -1,0 +1,17 @@
+@import "../../variable.scss";
+
+.Link {
+  line-height: 2.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: inherit;
+  &:hover {
+    color: $primary-color;
+    transform: rotate(5deg) scale(1.1);
+    background: black;
+  }
+}
