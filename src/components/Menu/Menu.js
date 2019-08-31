@@ -66,7 +66,7 @@ const Menu = props => {
       >
         <ul className={`${styles.menu__box__list}`}>
           <li className={`${styles.menu__box__item}`}>
-            <a href="#">01 about mia</a>
+            <a href="#about">01 about mia</a>
           </li>
           <li className={`${styles.menu__box__item}`}>
             <a href="#">02 your benefits</a>

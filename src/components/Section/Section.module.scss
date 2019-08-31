@@ -11,17 +11,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(120, 108, 232, 0.85),
-      rgba(97, 81, 248, 0.85)
-    ),
+  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 0.85), rgba(97, 81, 248, 0.85)),
     url(../../images/mia1.jpeg);
 }
 .hero__logo {
   font-family: "Nanum Pen Script", cursive;
   position: absolute;
-  top:  3rem;
+  top: 3rem;
   left: 2.5rem;
   font-size: 10rem;
   color: $white;
@@ -34,4 +30,78 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+//about
+.about {
+  overflow: auto;
+  padding: 10rem 0;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.about__box__left {
+  width: calc((100% -10rem) / 2);
+  position: relative;
+  float: left;
+  background: black;
+}
+.about__box__right {
+  width: calc((100% -6rem) / 2);
+  position: relative;
+  float: right;
+  height: 500px;
+  //background: red;
+}
+
+.about__img {
+  position: absolute;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  height: 20rem;
+  &::after {
+    transition: all 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: none;
+    width: 115%;
+    height: 120%;
+    border: 1rem solid $primary-color;
+  }
+  &:hover::after {
+    display: block;
+  }
+}
+.about__img,
+.about__img img {
+  max-width: 30rem;
+  width: auto;
+  min-width: 5rem;
+  max-height: 20rem;
+  height: auto;
+}
+.about__img__1 {
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+}
+.about__img__2 {
+  z-index: 3;
+  top: 35%;
+  left: 20%;
+}
+.about__img__3 {
+  z-index: 2;
+  top: 20%;
+  left: 40%;
+}
+
+.benefits {
+  padding: 2rem 0;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 0.85), rgba(97, 81, 248, 0.85)),
+    url("../../images/mia4.jpg");
 }

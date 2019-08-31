@@ -1,0 +1,18 @@
+@import "../../variable.scss";
+
+.Card {
+  text-align: center;
+  height: 30rem;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  width: calc((100% - 3 * 6rem) / 4);
+  display: inline-block;
+  > p {
+    display: block;
+  }
+}
+
+.Card__icon {
+
+}
