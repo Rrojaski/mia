@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  background-color: $other-white;
   line-height: 2.7rem;
   color: $grey;
   margin: 0;
@@ -24,8 +25,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 @media screen and (max-width: 1024px) {

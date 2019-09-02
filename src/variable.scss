@@ -1,12 +1,15 @@
 $primary-color: rgba(120, 108, 232, 1);
 $white: #ffffff;
+$other-white: #f7f7f7;
 $black: #000000;
-$grey: #777;;
+$grey: #777;
 $dark-grey: #333;
-$box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+$box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 
 $break-small: 480px;
 $break-medium: 768px;
 $break-large: 1200px;
 
-
+$gutter-horizontal: 6rem;
+$gutter-vertical: 6rem;
+$grid-width: 114rem;
