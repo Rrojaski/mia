@@ -15,13 +15,23 @@
   background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 0.85), rgba(97, 81, 248, 0.85)),
     url(../../images/mia1.jpeg);
 }
-.hero__logo {
+.hero__logo, .footer__logo {
   font-family: "Nanum Pen Script", cursive;
+}
+.hero__logo {
   position: absolute;
   top: 3rem;
   left: 2.5rem;
   font-size: 10rem;
   color: $white;
+}
+.footer__logo {
+  height: 20rem;
+  margin: 0 auto;
+  font-size: 20rem;
+  background-image: linear-gradient(to left, $primary-color, lighten($primary-color, 10%));
+  color: transparent;
+  background-clip: text;
 }
 .hero__box {
   text-align: center;
@@ -69,7 +79,7 @@
   outline-offset: 2rem;
   &:hover {
     outline: 1.5rem solid $primary-color;
-    transform: scale(1.05) translateY(.5rem);
+    transform: scale(1.05) translateY(0.5rem);
     z-index: 4;
   }
 }
@@ -101,5 +111,20 @@
 
 //rotaing card section
 .offers {
-  padding: 10rem 0;
+  padding: 15rem 0 50rem 0;
+}
+
+.reviews {
+  padding: 25rem 0;
+  background-color: lightgray;
+}
+
+.contact {
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 1), rgba(97, 81, 248, 1));
+}
+
+.footer {
+  background-color: #333;
+  padding: 15rem 0;
 }

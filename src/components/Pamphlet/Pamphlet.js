@@ -10,7 +10,7 @@ const Pamphlet = props => {
     <div className={`${styles.Pamphlet}`}>
       <div className={`${styles.pamphlet__front}`}>
         <div className={`${styles.pamphlet__front__img} ${styles[props.img]}`} />
-        <h3 className={`${styles.pamphlet__front__header}`}>{props.header}</h3>
+        <h3 className={`${styles.pamphlet__front__header} ${styles[props.color]}`}>{props.header}</h3>
         <ul className={`${styles.pamphlet__front__list}`}>
           <li className={`${styles.pamphlet__front__list__item}`}>{props.li_1}</li>
           <li className={`${styles.pamphlet__front__list__item}`}>{props.li_2}</li>
@@ -19,14 +19,14 @@ const Pamphlet = props => {
           <li className={`${styles.pamphlet__front__list__item}`}>{props.li_5}</li>
         </ul>
       </div>
-      <div className={`${styles.pamphlet__back}`}>
+      <div className={`${styles.pamphlet__back} ${styles[props.color]}`} >
         <p className={`${styles.pamphlet__back__info}`}>
           only
         </p>
         <div className={`${styles.pamphlet__back__price}`}>
           {props.price}
         </div>
-        <Button>buy now!</Button>
+        <Button type='primary' color='primary--white'>buy now!</Button>
       </div>
     </div>
   );

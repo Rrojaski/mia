@@ -110,13 +110,40 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Col size='col-1-of-3'><Pamhplet img={mia2} header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
-            <Col size='col-1-of-3'><Pamhplet /></Col>
-            <Col size='col-1-of-3'><Pamhplet /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='primary' img='mia-1' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='secondary' img='mia-2' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='tertiary' img='mia-3' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
           </Row>
           <Row>
             <Col><Button type='primary' color='primary--purple'>discover all tours</Button></Col>
           </Row>
+        </Section>
+        <Section type='reviews'>
+          <Row>
+            <Col>
+              <Header>we make poeple genuinely happy</Header>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Button type='secondary' mod='button--after'>read all stories</Button>
+            </Col>
+          </Row>
+        </Section>
+        <Section type='contact'>
+          <Row>
+            <Col>
+              box with contact form
+            </Col>
+          </Row>
+        </Section>
+        <Section type='footer'>
+          <Row>
+            <Col>
+              
+            </Col>
+          </Row>
+
         </Section>
       </div>
     );
