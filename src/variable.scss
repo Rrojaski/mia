@@ -22,3 +22,17 @@ $grid-width: 114rem;
 .u-margin-bottom-lg {
   margin-bottom: 10rem;
 }
+.u-border-top {
+  border-top: .1rem solid $grey;
+  padding-top: 2rem;
+
+  color: $white;
+  text-align: left;
+}
+.u-item-margin-right-sm {
+
+  & > a:not(:last-child) {
+    display: inline-block;
+    margin-right: 1.8rem;
+  }
+}

@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.0675993d.chunk.css",
-    "main.js": "/static/js/main.15227486.chunk.js",
-    "main.js.map": "/static/js/main.15227486.chunk.js.map",
+    "main.css": "/static/css/main.504d7c57.chunk.css",
+    "main.js": "/static/js/main.f35aee4e.chunk.js",
+    "main.js.map": "/static/js/main.f35aee4e.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.9bb6e9b1.js",
     "runtime~main.js.map": "/static/js/runtime~main.9bb6e9b1.js.map",
-    "static/js/2.4c9ce922.chunk.js": "/static/js/2.4c9ce922.chunk.js",
-    "static/js/2.4c9ce922.chunk.js.map": "/static/js/2.4c9ce922.chunk.js.map",
+    "static/js/2.d21d4719.chunk.js": "/static/js/2.d21d4719.chunk.js",
+    "static/js/2.d21d4719.chunk.js.map": "/static/js/2.d21d4719.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d41589d2fce8828c3d67591a88ab5803.js": "/precache-manifest.d41589d2fce8828c3d67591a88ab5803.js",
+    "precache-manifest.116519d7162d8491d7f2624c542b1f1d.js": "/precache-manifest.116519d7162d8491d7f2624c542b1f1d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0675993d.chunk.css.map": "/static/css/main.0675993d.chunk.css.map",
+    "static/css/main.504d7c57.chunk.css.map": "/static/css/main.504d7c57.chunk.css.map",
     "static/media/img1.PNG": "/static/media/img1.36a0acef.PNG",
     "static/media/img2.PNG": "/static/media/img2.72cd51d7.PNG",
     "static/media/img3.PNG": "/static/media/img3.55832769.PNG",
     "static/media/icon-font.css": "/static/media/linea-basic-10.e6763f00.ttf",
+    "static/media/Review.module.scss": "/static/media/parents.25ed99f4.jpg",
     "static/media/Pamphlet.module.scss": "/static/media/mia3.8e6a82b3.jpeg",
     "static/media/mia2.jpeg": "/static/media/mia2.a05ad27e.jpeg",
-    "static/media/Section.module.scss": "/static/media/sample.6651bc04.jpg",
-    "static/media/Review.module.scss": "/static/media/parents.25ed99f4.jpg"
+    "static/media/Section.module.scss": "/static/media/mia4.77dbf139.jpg",
+    "static/media/Contact.module.scss": "/static/media/sample.6651bc04.jpg"
   }
 }

@@ -13,6 +13,6 @@
 </ul>
 <h2>To do:</h2>
 <ul>
-<li>Finish closing animation for menu</li>
+<li>add blur effect ro review img on hover</li>
 <li>Finish project alayout</li>
 </ul>

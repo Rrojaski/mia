@@ -51,7 +51,7 @@ const Title = props => {
   } else if (props.type == 'footer') {
     return (
       <section className={`${styles.Section} ${styles[props.type]}`}>
-        <div className={`${styles.footer__logo}`}>mia</div>
+        <div className={`${styles.footer__logo}`}><span>mia</span></div>
         {props.children}
       </section>
     )

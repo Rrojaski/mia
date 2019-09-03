@@ -26,12 +26,16 @@
   color: $white;
 }
 .footer__logo {
-  height: 20rem;
+  padding: 4rem 0;
+  text-align: center;
   margin: 0 auto;
-  font-size: 20rem;
+  margin-bottom: 4rem;
   background-image: linear-gradient(to left, $primary-color, lighten($primary-color, 10%));
   color: transparent;
   background-clip: text;
+  & > span {
+    font-size: 20rem;
+  }
 }
 .hero__box {
   text-align: center;

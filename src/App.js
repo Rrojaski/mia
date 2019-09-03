@@ -14,6 +14,8 @@ import Card from './components/Card/Card';
 import { Row, Col } from './components/Grid/Grid';
 import Pamhplet from './components/Pamphlet/Pamphlet';
 import Review from './components/Review/Review';
+import Contact from './components/Contact/Contact';
+
 
 //media
 import mia2 from './images/mia2.jpeg';
@@ -127,14 +129,14 @@ class App extends Component {
           <Row>
             <Col>
               <Review type='parents'>
-                <Paragraph size='lg'>heading</Paragraph>
+                <Paragraph size='lg'>I HAD THE BEST day EVER WITH MY FAMILY</Paragraph>
                 <Paragraph>some text</Paragraph>
               </Review>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Review type='parents'>
+              <Review type='maura'>
                 <Paragraph size='lg'>I HAD THE BEST WEEK EVER WITH MY FAMILY</Paragraph>
                 <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</Paragraph>
               </Review>
@@ -149,14 +151,27 @@ class App extends Component {
         <Section type='contact'>
           <Row>
             <Col>
-              box with contact form
+              <Contact />
             </Col>
           </Row>
         </Section>
         <Section type='footer'>
           <Row>
-            <Col>
-
+            <Col size='col-1-of-2'>
+              <div className='u-border-top u-item-margin-right-sm'>
+                <Link>company</Link>
+                <Link>contact us</Link>
+                <Link>carrers</Link>
+                <Link>privacy policy</Link>
+                <Link>terms</Link>
+              </div>
+            </Col>
+            <Col size='col-1-of-2'>
+              <div className='u-border-top'>
+                <Paragraph siz='sm'>
+                  Built by <Link>JONAS SCHMEDTMANN</Link> for his online course <Link>ADVANCED CSS AND SASS</Link>. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                </Paragraph>
+              </div>
             </Col>
           </Row>
 
