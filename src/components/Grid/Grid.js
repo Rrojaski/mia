@@ -11,7 +11,7 @@ export const Row = props => {
 
 export const Col = (props) => {
   return (
-    <div className={`${styles.Col} ${styles[props.size]}`}>
+    <div className={`${styles.Col} ${styles[props.size]} ${styles[props.mod]}`}>
       {props.children}
     </div>
   );

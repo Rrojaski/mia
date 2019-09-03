@@ -1,0 +1,81 @@
+@import "../../variable.scss";
+
+.Review {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2px;
+  transform: skewX(-7deg);
+  background-color: rgba($white, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+  padding: 5rem 7rem;
+  margin-bottom: 5rem;
+  text-align: left;
+
+  .review__inner {
+    width: 100%;
+    transform: skewX(7deg);
+    
+
+    &:hover {
+      .img {
+        background-size: 120%;
+        &::after {
+          padding: 4.5rem 0 4.5rem 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.review__circle {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  overflow: hidden;
+  margin-right: 5rem;
+}
+
+.img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  &::after {
+    transition: all 0.5s;
+    content: "Anonymuos";
+    opacity: 0;
+    position: absolute;
+    color: $white;
+    background-color: rgba($black, 0.5);
+    border-radius: inherit;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 7.5rem 0 1.5rem 0;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.parents {
+  background-image: url("../../images/parents.jpg");
+  &::after {
+    content: "Claudio & Polovia";
+  }
+}

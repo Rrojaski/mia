@@ -3,7 +3,7 @@
 .Pamphlet {
   border-radius: 3px;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 50rem;
   position: relative;
   perspective: 150rem;
   display: block;
@@ -27,12 +27,8 @@
 
 .pamphlet__front,
 .pamphlet__back {
+  box-shadow: 0 1.5rem 4rem rgba($grey, 0.4);
   border-radius: inherit;
-  //clearfix
-  content: "";
-  clear: both;
-  display: table;
-
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -67,14 +63,20 @@
     url("../../images/mia3.jpeg");
 }
 .pamphlet__front__header {
-  font-weight: 400;
-  box-decoration-break: clone;
-  top: 13rem;
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
   color: $white;
-  padding: 1rem;
-  font-size: 3rem;
   position: absolute;
-  right: 0;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+  & > span {
+    line-height: 5rem;
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+  }
 }
 .pamphlet__front__list {
   padding: 2rem;
@@ -84,7 +86,7 @@
 
   & > *:not(:last-child) {
     border-bottom: 0.1rem solid rgba($grey, 0.15);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 1rem;
   }
 }
@@ -94,22 +96,37 @@
 }
 
 .pamphlet__back {
+  text-align: center;
+  padding: 12rem 4rem;
   transform: rotateY(180deg);
 }
 .primary {
-  background-image: linear-gradient(to top left, rgba($primary-color, 1), rgba(lighten($primary-color, 10%), 1));
+  background-image: linear-gradient(to top left, rgba($primary-color, 0.85), rgba(lighten($primary-color, 10%), 0.85));
 }
 .secondary {
-  background-image: linear-gradient(to top left, rgba($secondary-color, 1), rgba(lighten($secondary-color, 10%), 1));
+  background-image: linear-gradient(
+    to top left,
+    rgba($secondary-color, 0.85),
+    rgba(lighten($secondary-color, 10%), 0.85)
+  );
 }
 .tertiary {
-  background-image: linear-gradient(to top left, rgba($tertiary-color, 1), rgba(lighten($tertiary-color, 10%), 1));
+  background-image: linear-gradient(
+    to top left,
+    rgba($tertiary-color, 0.85),
+    rgba(lighten($tertiary-color, 10%), 0.85)
+  );
 }
+
+
 .pamphlet__back__info {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: $white;
+  margin-bottom: 5rem;
 }
 .pamphlet__back__price {
-  font-size: 3rem;
+  margin-bottom: 10rem;
+  font-weight: 300;
+  font-size: 5rem;
   color: $white;
 }

@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 import "./App.scss";
-
+import './variable.scss';
 
 //components
 import Title from "./components/Title/Title";
@@ -13,7 +13,7 @@ import Menu from "./components/Menu/Menu";
 import Card from './components/Card/Card';
 import { Row, Col } from './components/Grid/Grid';
 import Pamhplet from './components/Pamphlet/Pamphlet';
-
+import Review from './components/Review/Review';
 
 //media
 import mia2 from './images/mia2.jpeg';
@@ -103,7 +103,7 @@ class App extends Component {
         </Section>
         <Section type='offers'>
           <Row>
-            <Col>
+            <Col mod='margin-bottom-md'>
               <Header>
                 MOST POPULAR packages
                 </Header>
@@ -115,13 +115,29 @@ class App extends Component {
             <Col size='col-1-of-3'><Pamhplet color='tertiary' img='mia-3' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
           </Row>
           <Row>
-            <Col><Button type='primary' color='primary--purple'>discover all tours</Button></Col>
+            <Col mod='margin-top-sm'><Button type='primary' color='primary--purple'>discover all tours</Button></Col>
           </Row>
         </Section>
         <Section type='reviews'>
           <Row>
             <Col>
-              <Header>we make poeple genuinely happy</Header>
+              <Header mod='u-margin-bottom-lg'>we make poeple genuinely happy</Header>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Review type='parents'>
+                <Paragraph size='lg'>heading</Paragraph>
+                <Paragraph>some text</Paragraph>
+              </Review>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Review type='parents'>
+                <Paragraph size='lg'>I HAD THE BEST WEEK EVER WITH MY FAMILY</Paragraph>
+                <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</Paragraph>
+              </Review>
             </Col>
           </Row>
           <Row>
@@ -140,7 +156,7 @@ class App extends Component {
         <Section type='footer'>
           <Row>
             <Col>
-              
+
             </Col>
           </Row>
 

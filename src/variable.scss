@@ -9,9 +9,16 @@ $dark-grey: #333;
 $box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 
 $break-small: 480px;
-$break-medium: 768px;
+$break-medium: 900px;
 $break-large: 1200px;
 
 $gutter-horizontal: 6rem;
 $gutter-vertical: 6rem;
 $grid-width: 114rem;
+
+
+//utility classes
+
+.u-margin-bottom-lg {
+  margin-bottom: 10rem;
+}

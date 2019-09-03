@@ -43,7 +43,6 @@ const Title = props => {
               <img src={img1} onMouseOver={scale} className={`${styles.about__img} ${styles.about__img__1}`} />
               <img src={img3} onMouseOver={scale} className={`${styles.about__img} ${styles.about__img__2}`} />
               <img src={img2} onMouseOver={scale} className={`${styles.about__img} ${styles.about__img__3}`} />
-
             </div>
           </Col>
         </Row>
