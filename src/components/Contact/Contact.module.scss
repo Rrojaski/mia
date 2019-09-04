@@ -1,31 +1,199 @@
 @import "../../variable.scss";
 
-
 .Contact {
-  background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 65%, transparent 65%),url(../../images/sample.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%),
+    url(../../images/sample.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2px;
-  box-shadow: 0 1.5rem 4rem rgba($black, .3);
-  
-  
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.3);
+
   //clearfix
   &::after {
-    content: '';
+    content: "";
     clear: both;
     display: table;
   }
 }
 
+//contact form container
 .contact__form {
+  padding: 5rem 5rem;
   float: left;
+  width: 50rem;
+  text-align: left;
+  & > p {
+    left: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
 
-  &> h1 {
-    width: 100%;
-    display: block;
+  //remove extra margin from last child
+}
+
+//group container for name, email, radio1, and radio2
+.contact__group:not(:nth-child(4)) {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.contact__group:nth-child(4) {
+  width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.contact__name,
+.contact__email {
+  border-radius: 2px;
+  padding: 2.5rem 2.5rem;
+  padding-bottom: 2.2rem;
+  width: 100%;
+  height: 5rem;
+  border: none;
+
+  border-bottom: 3px solid transparent;
+  color: lighten($grey, 12%);
+
+  &::placeholder {
+    font-size: 1.5rem;
+    color: lighten($grey, 15%);
+  }
+  &:placeholder-shown + label {
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+  &:focus:invalid {
+    border-bottom: 3px solid $red;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba($black, 0.1);
+    border-bottom: 3px solid $primary-color;
   }
 }
-.contact__form__name {
-  
 
+.contact__label1,
+.contact__label2 {
+  transition: all 0.5s ease;
+  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  top: 6rem;
+  left: 1.5rem;
+  word-wrap: none;
+  position: absolute;
+}
+
+.contact__radio1,
+.contact__radio2,
+.contact__label3,
+.contact__label4 {
+  cursor: pointer;
+  display: inline-block;
+}
+
+//hides radio button
+.contact__radio1,
+.contact__radio2 {
+  position: absolute;
+  visibility: hidden;
+}
+
+//updates css for custom radio button on check of radio button
+.contact__radio1:checked + .contact__label3 span::after {
+  opacity: 1;
+}
+.contact__radio2:checked + .contact__label4 span::after {
+  opacity: 1;
+}
+
+.contact__label3,
+.contact__label4 {
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+//custom radio button
+.contact__button {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 0.5rem solid $primary-color;
+  height: 3rem;
+  width: 3rem;
+
+  &::after {
+    transition: all 0.2s ease;
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    opacity: 0;
+    background-color: $primary-color;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+//radio group
+
+.contact__group__radio {
+  width: 49%;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1%;
+  }
+}
+
+//submit button
+.submit {
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  display: inline-block;
+  color: $white;
+  background-color: $primary-color;
+  border: none;
+  text-transform: uppercase;
+
+  &::before {
+    border-radius: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    position: absolute;
+    display: block;
+    background-color: inherit;
+    width: 50%;
+    height: 50%;
+    content: " ";
+    transition: all 0.5s;
+  }
+  &:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+
+  &::after {
+    content: " →";
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

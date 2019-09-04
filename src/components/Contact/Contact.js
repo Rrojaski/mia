@@ -4,24 +4,39 @@ import styles from "./Contact.module.scss";
 //compontent
 import Header from '../Header/Header';
 import Button from '../Button/Button';
-
+import { Row, Col } from '../Grid/Grid';
 
 const Contact = props => {
   return (
     <div className={`${styles.Contact}`}>
       <form className={`${styles.contact__form}`}>
-      <Header>START BOOKING NOW</Header>
-        <input className={`${styles.contact__form__name}`} type='text' placeholder='Name' required/>
-        <input className={`${styles.contact__form__email}`} type='email' placeholder='email' required/>
-        <input className={`${styles.contact__form__radio1}`} type='radio' required/>
-        <label>Small tour group</label>
-        <input className={`${styles.contact__form__radio2}`} type='radio' required/>
-        <label>Large tour group</label>
-        <div className={`${styles.submit}`}>
-          <Button type='primary' color='button--purple' mod='arrow'>Send</Button>
+        <Header>START BOOKING NOW</Header>
+        <div className={`${styles.contact__group}`}>
+          <input className={`${styles.contact__name}`} type='text' id='name' placeholder='Full name' required />
+          <label className={`${styles.contact__label1}`} for='name'>Full name</label>
         </div>
+        <div className={`${styles.contact__group}`}>
+          <input className={`${styles.contact__email}`} type='email' id='email' placeholder='Email address' required />
+          <label className={`${styles.contact__label2}`} for='email'>Email address</label>
+        </div>
+        <div className={`${styles.contact__group}`}>
+          <div className={`${styles.contact__group__radio}`}>
+            <input className={`${styles.contact__radio1}`} type='radio' id='small' name='radio' required />
+            <label className={`${styles.contact__label3}`} for='small'>
+              <span className={`${styles.contact__button}`} />
+              Small tour group
+              </label>
+          </div>
+          <div className={`${styles.contact__group__radio}`}>
+            <input className={`${styles.contact__radio2}`} type='radio' id='large' name='radio' required />
+            <label className={`${styles.contact__label4}`} for='large'>
+              <span className={`${styles.contact__button}`} />
+              Large tour group
+              </label>
+          </div>
+        </div>
+        <button className={`${styles.submit}`} type='submit'>send</button>
       </form>
-      X    
     </div>
   );
 };
