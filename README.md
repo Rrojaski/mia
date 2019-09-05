@@ -13,8 +13,6 @@
 </ul>
 <h2>To do:</h2>
 <ul>
-<li>update font-size for responsiveness</li>
-<li>Finish project layout</li>
 <li>update content and images</li>
 <li>make modal pop-up</li>
 </ul>

@@ -4,9 +4,9 @@ $tertiary-color: #28b485;
 $white: #ffffff;
 $other-white: #f7f7f7;
 $black: #000000;
+$dark-grey: #333;
 $grey: #777;
 $red: #f44336;
-$dark-grey: #333;
 $box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 
 $break-small: 480px;
@@ -22,6 +22,9 @@ $grid-width: 114rem;
 
 .u-margin-bottom-lg {
   margin-bottom: 10rem;
+}
+.u-margin-top-sm {
+  margin-top: 4rem;
 }
 .u-border-top {
   border-top: .1rem solid $grey;

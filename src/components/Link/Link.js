@@ -3,7 +3,11 @@ import styles from "./Link.module.scss";
 
 const Link = props => {
   return (
-    <a href="#" className={`${styles.Link}`}>
+    <a
+      target={props.external ? "_blank" : ""}
+      href={props ? props.href : "#"}
+      className={`${styles.Link}`}
+    >
       {props.children}
     </a>
   );

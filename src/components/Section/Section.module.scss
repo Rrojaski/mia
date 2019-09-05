@@ -11,7 +11,11 @@
   width: 100%;
   height: 100vh;
   background-position: bottom;
-  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 0.85), rgba(97, 81, 248, 0.85)),
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(120, 108, 232, 0.85),
+      rgba(97, 81, 248, 0.85)
+    ),
     url(../../images/mia1.jpeg);
 }
 .hero__logo,
@@ -58,6 +62,7 @@
 
 .about__composition {
   position: relative;
+  min-height: 25rem;
 
   &:hover .about__img:not(:hover) {
     transform: scale(0.95);
@@ -66,7 +71,8 @@
 .about__img {
   position: absolute;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.4);
-  width: 55%;
+  max-width: 30rem;
+  width: auto;
   border-radius: 2px;
   transition: all 0.2s;
   outline-offset: 2rem;
@@ -98,7 +104,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 0.85), rgba(97, 81, 248, 0.85)),
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(120, 108, 232, 0.85),
+      rgba(97, 81, 248, 0.85)
+    ),
     url("../../images/mia4.jpg");
 }
 
@@ -108,14 +118,19 @@
 }
 
 .reviews {
-  padding: 25rem 0;
-  background-image: linear-gradient(rgba($white, 0.8), rgba($white, 0.8)), url("../../images/sample.jpg");
+  padding: 15rem 0;
+  background-image: linear-gradient(rgba($white, 0.8), rgba($white, 0.8)),
+    url("../../images/sample.jpg");
   background-position: center;
 }
 
 .contact {
   padding: 22rem 0;
-  background-image: linear-gradient(to right bottom, rgba(120, 108, 232, 1), rgba(97, 81, 248, 1));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(120, 108, 232, 1),
+    rgba(97, 81, 248, 1)
+  );
 }
 
 .footer {
@@ -153,7 +168,11 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 4rem;
-  background-image: linear-gradient(to left, $primary-color, lighten($primary-color, 10%));
+  background-image: linear-gradient(
+    to left,
+    $primary-color,
+    lighten($primary-color, 10%)
+  );
   color: transparent;
   background-clip: text;
   & > span {
@@ -169,5 +188,26 @@
     &:not(:last-child) {
       margin-bottom: 6rem;
     }
+  }
+
+  .about__img {
+    box-shadow: 0 1.5rem 3rem rgba($black, 0.2);
+    max-width: 20rem;
+  }
+  .about__img__1 {
+    z-index: 1;
+    top: 1.5rem;
+    left: 0;
+  }
+  .about__img__2 {
+    z-index: 2;
+    top: 2rem;
+    left: unset;
+    right: 0;
+  }
+  .about__img__3 {
+    z-index: 3;
+    top: 0rem;
+    left: 16rem;
   }
 }

@@ -52,7 +52,7 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  
+
   transition: all 0.5s;
   &::after {
     transition: all 0.5s;
@@ -84,5 +84,16 @@
   background-image: url("../../images/maura.jpg");
   &::after {
     content: "Maura";
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  .Review {
+    width: 100%;
+    transform: skew(0);
+    padding: 3rem 5rem;
+    .review__inner {
+      transform: skew(0) !important;
+    }
   }
 }
