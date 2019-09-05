@@ -52,7 +52,7 @@ const Modal = props => {
             book now
           </Button>
         </div>
-        <a className={`${styles.modal__close}`} href="./#about">
+        <a className={`${styles.modal__close}`} href="./#offers">
           X
         </a>
       </div>
