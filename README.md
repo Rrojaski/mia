@@ -14,5 +14,4 @@
 <h2>To do:</h2>
 <ul>
 <li>update content and images</li>
-<li>make modal pop-up</li>
 </ul>

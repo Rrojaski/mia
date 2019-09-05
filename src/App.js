@@ -15,6 +15,7 @@ import { Row, Col } from "./components/Grid/Grid";
 import Pamhplet from "./components/Pamphlet/Pamphlet";
 import Review from "./components/Review/Review";
 import Contact from "./components/Contact/Contact";
+import Modal from "./components/Modal/Modal";
 
 //media
 import mia2 from "./images/mia2.jpeg";
@@ -246,6 +247,7 @@ class App extends Component {
           </Row>
         </Section>
         <Section type="footer"></Section>
+        <Modal />
       </div>
     );
   }

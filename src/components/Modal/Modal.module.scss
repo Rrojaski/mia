@@ -1,0 +1,144 @@
+@import "../../variable.scss";
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 2;
+  visibility: hidden;
+
+  &:target {
+    visibility: visible;
+
+    .modal__box {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 3;
+  background-color: rgba($black, 0.8);
+  backdrop-filter: blur(4px);
+}
+.modal__box {
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  transition: all 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 75%;
+  height: auto;
+  max-height: 90vh;
+  overflow-y: scroll;
+  border-radius: 3px;
+  background-color: $other-white;
+  z-index: 4;
+}
+.modal__left,
+.modal__right {
+  height: 100%;
+  display: table-cell;
+  float: left;
+}
+.modal__left {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  width: calc(100% / 3);
+  overflow: hidden;
+}
+.modal__img {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+.modal__right {
+  display: table-cell;
+  padding: 4rem 5rem;
+  vertical-align: middle;
+  width: calc((100% / 3) * 2);
+
+  //remove default line height from heading and sub heading
+  & > p:first-child,
+  & > p:nth-child(2) {
+    line-height: 4rem !important;
+    margin-bottom: 2rem;
+  }
+}
+
+.modal__text {
+  width: 100%;
+  column-count: 2;
+  color: $grey;
+  font-size: 1.5rem;
+  column-rule: 1px solid rgba($grey, 0.3);
+  column-gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.modal__close {
+  display: block;
+  position: absolute;
+  color: $grey;
+  font-size: 2rem;
+  top: 4rem;
+  right: 4rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  .modal__left {
+    overflow: visible;
+    height: 40vh;
+  }
+  .modal__img {
+    transform: translateX(2.5rem);
+    margin: 8rem 0;
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  .modal__left {
+    overflow: visible;
+    height: 40vh;
+  }
+  .modal__img {
+    transform: translateX(2.5rem);
+    margin: 15rem 0;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .modal__left {
+    overflow: visible;
+    height: 100vh;
+  }
+  .modal__img {
+    transform: translateX(2.5rem);
+    margin: 20rem 0;
+  }
+  .modal__text {
+    width: 100%;
+    column-count: 1;
+    color: $grey;
+    font-size: 1.5rem;
+    column-rule: 1px solid rgba($grey, 0.3);
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+  }
+}
