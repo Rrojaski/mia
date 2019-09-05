@@ -112,9 +112,9 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Col size='col-1-of-3'><Pamhplet color='primary' img='mia-1' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
-            <Col size='col-1-of-3'><Pamhplet color='secondary' img='mia-2' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
-            <Col size='col-1-of-3'><Pamhplet color='tertiary' img='mia-3' header='the sea explorer' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='primary' img='mia-1' header='the sleepy baby' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='secondary' img='mia-2' header='the morning glory' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
+            <Col size='col-1-of-3'><Pamhplet color='tertiary' img='mia-3' header='the peacefull playground' li_1='3 day tours' li_2='Up to 30 people' li_3='2 tour guides' li_4='sleep in cozy hotels' li_5='difficulty: easy' price='$297' /></Col>
           </Row>
           <Row>
             <Col mod='margin-top-sm'><Button type='primary' color='primary--purple'>discover all tours</Button></Col>
@@ -123,7 +123,7 @@ class App extends Component {
         <Section type='reviews'>
           <Row>
             <Col>
-              <Header mod='u-margin-bottom-lg'>we make poeple genuinely happy</Header>
+              <Header mod='u-margin-bottom-lg'>we make babies genuinely happy</Header>
             </Col>
           </Row>
           <Row>
@@ -156,25 +156,6 @@ class App extends Component {
           </Row>
         </Section>
         <Section type='footer'>
-          <Row>
-            <Col size='col-1-of-2'>
-              <div className='u-border-top u-item-margin-right-sm'>
-                <Link>company</Link>
-                <Link>contact us</Link>
-                <Link>carrers</Link>
-                <Link>privacy policy</Link>
-                <Link>terms</Link>
-              </div>
-            </Col>
-            <Col size='col-1-of-2'>
-              <div className='u-border-top'>
-                <Paragraph siz='sm'>
-                  Built by <Link>JONAS SCHMEDTMANN</Link> for his online course <Link>ADVANCED CSS AND SASS</Link>. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
-                </Paragraph>
-              </div>
-            </Col>
-          </Row>
-
         </Section>
       </div>
     );

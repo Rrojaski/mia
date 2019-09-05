@@ -9,7 +9,7 @@ import { Row, Col } from '../Grid/Grid';
 const Contact = props => {
   return (
     <div className={`${styles.Contact}`}>
-      <form className={`${styles.contact__form}`}>
+      <form action='#' className={`${styles.contact__form}`}>
         <Header>START BOOKING NOW</Header>
         <div className={`${styles.contact__group}`}>
           <input className={`${styles.contact__name}`} type='text' id='name' placeholder='Full name' required />

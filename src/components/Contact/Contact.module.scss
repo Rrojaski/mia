@@ -1,7 +1,7 @@
 @import "../../variable.scss";
 
 .Contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%),
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
     url(../../images/sample.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,9 +18,9 @@
 
 //contact form container
 .contact__form {
-  padding: 5rem 5rem;
+  padding: 10rem 8rem;
   float: left;
-  width: 50rem;
+  width: 60rem;
   text-align: left;
   & > p {
     left: 0;
@@ -28,7 +28,7 @@
     margin-bottom: 5rem;
   }
 
-  //remove extra margin from last child
+  
 }
 
 //group container for name, email, radio1, and radio2
@@ -37,6 +37,8 @@
   position: relative;
   margin-bottom: 5rem;
 }
+
+//remove extra margin from last child
 .contact__group:nth-child(4) {
   width: 100%;
   position: relative;
@@ -109,9 +111,10 @@
 
 .contact__label3,
 .contact__label4 {
-  padding-left: 5rem;
+  padding-left: 3.5rem;
   font-size: 1.5rem;
   display: inline-block;
+  white-space: nowrap;
   position: relative;
 }
 
@@ -146,11 +149,11 @@
 //radio group
 
 .contact__group__radio {
-  width: 49%;
+  width: 45%;
   display: inline-block;
 
   &:not(:last-child) {
-    margin-right: 1%;
+    margin-right: 5%;
   }
 }
 
@@ -196,4 +199,32 @@
   &:focus {
     outline: none;
   }
+}
+
+@media screen and (max-width: $break-medium) {
+  .Contact {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 100%),
+      url(../../images/sample.jpg);
+  }
+
+  .contact__form {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 100%;
+  }
+
+  .contact__group__radio {
+    width: 50%;
+    display: block;
+  
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  //mod extra margin from last child
+.contact__group:nth-child(4) {
+  margin-bottom: 4rem;
+}
 }

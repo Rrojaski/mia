@@ -3,6 +3,8 @@ import styles from "./Section.module.scss";
 
 //components
 import { Row, Col } from '../Grid/Grid';
+import Link from '../Link/Link';
+import Paragraph from '../Paragraph/Paragraph';
 
 //media 
 import img1 from '../../images/img1.PNG';
@@ -52,7 +54,20 @@ const Title = props => {
     return (
       <section className={`${styles.Section} ${styles[props.type]}`}>
         <div className={`${styles.footer__logo}`}><span>mia</span></div>
-        {props.children}
+        <Row>
+          <div className={`${styles.footer__box}`}>
+            <Link>company</Link>
+            <Link>contact us</Link>
+            <Link>carrers</Link>
+            <Link>privacy policy</Link>
+            <Link>terms</Link>
+          </div>
+          <div className={`${styles.footer__box}`}>
+            <Paragraph siz='sm'>
+              Built by <Link>Roman Rojas</Link> for to showcase his work with <Link>ADVANCED CSS AND SASS</Link>. A credit to the original author of the design, Jonas Schmedtman.
+                </Paragraph>
+          </div>
+        </Row>
       </section>
     )
   } else {
