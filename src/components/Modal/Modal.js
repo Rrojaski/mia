@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styles from "./Modal.module.scss";
 
 //components
@@ -18,12 +18,12 @@ const Modal = props => {
         <div className={`${styles.modal__left}`}>
           <img
             src={mia1}
-            alt="modal image of party"
+            alt="modal of party"
             className={`${styles.modal__img}`}
           />
           <img
             src={mia2}
-            alt="modal image of party"
+            alt="modal of party"
             className={`${styles.modal__img}`}
           />
         </div>

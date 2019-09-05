@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styles from "./Section.module.scss";
 
 //components
@@ -12,21 +12,19 @@ import img2 from "../../images/img2.PNG";
 import img3 from "../../images/img3.PNG";
 
 const img_1 = document.getElementById("img1");
-const img_2 = document.getElementById("img2");
-const img_3 = document.getElementById("img3");
 
 const scale = () => {
   console.log(img_1);
 };
 const Title = props => {
-  if (props.type == "hero") {
+  if (props.type === "hero") {
     return (
       <section className={`${styles.Section} ${styles[props.type]}`}>
         <div className={`${styles.hero__logo}`}>mia</div>
         <div className={`${styles.hero__box}`}>{props.children}</div>
       </section>
     );
-  } else if (props.type == "about") {
+  } else if (props.type === "about") {
     return (
       <section
         id={props.id}
@@ -44,16 +42,19 @@ const Title = props => {
           <Col size="col-1-of-2">
             <div className={`${styles.about__composition}`}>
               <img
+                alt='baby'
                 src={img1}
                 onMouseOver={scale}
                 className={`${styles.about__img} ${styles.about__img__1}`}
               />
               <img
+                alt='baby'
                 src={img3}
                 onMouseOver={scale}
                 className={`${styles.about__img} ${styles.about__img__2}`}
               />
               <img
+                alt='baby'
                 src={img2}
                 onMouseOver={scale}
                 className={`${styles.about__img} ${styles.about__img__3}`}
@@ -63,7 +64,7 @@ const Title = props => {
         </Row>
       </section>
     );
-  } else if (props.type == "footer") {
+  } else if (props.type === "footer") {
     return (
       <section className={`${styles.Section} ${styles[props.type]}`}>
         <div className={`${styles.footer__logo}`}>

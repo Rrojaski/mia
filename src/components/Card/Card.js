@@ -3,7 +3,6 @@ import styles from "./Card.module.scss";
 import "../../icon-font.css";
 
 //Components
-import Header from '../Header/Header';
 import Paragraph from '../Paragraph/Paragraph';
 
 const Card = props => {

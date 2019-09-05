@@ -3,8 +3,6 @@ import styles from "./Contact.module.scss";
 
 //compontent
 import Header from '../Header/Header';
-import Button from '../Button/Button';
-import { Row, Col } from '../Grid/Grid';
 
 const Contact = props => {
   return (

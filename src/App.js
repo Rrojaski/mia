@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from "react";
+import React, { Component } from "react";
 import "./App.scss";
 import "./variable.scss";
 
@@ -6,7 +6,6 @@ import "./variable.scss";
 import Title from "./components/Title/Title";
 import Paragraph from "./components/Paragraph/Paragraph";
 import Header from "./components/Header/Header";
-import Link from "./components/Link/Link";
 import Button from "./components/Button/Button";
 import Section from "./components/Section/Section";
 import Menu from "./components/Menu/Menu";
@@ -16,11 +15,6 @@ import Pamhplet from "./components/Pamphlet/Pamphlet";
 import Review from "./components/Review/Review";
 import Contact from "./components/Contact/Contact";
 import Modal from "./components/Modal/Modal";
-
-//media
-import mia2 from "./images/mia2.jpeg";
-
-let toggle = "";
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +31,7 @@ class App extends Component {
     this.menuToggle = this.menuToggle.bind(this);
   }
   menuToggle() {
-    if (this.state.overlay != "menu__overlay--cover") {
+    if (this.state.overlay !== "menu__overlay--cover") {
       this.setState({
         overlay: "menu__overlay--cover",
         line__top: "menu__line__top--rotate",
