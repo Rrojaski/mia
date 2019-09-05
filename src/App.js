@@ -188,7 +188,7 @@ class App extends Component {
           <Row>
             <Col mod="margin-top-sm">
               <Button type="primary" color="primary--purple">
-                discover all tours
+                discover all packages
               </Button>
             </Col>
           </Row>
