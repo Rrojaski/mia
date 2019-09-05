@@ -40,8 +40,11 @@
 }
 
 .pamphlet__front {
+  overflow: hidden;
 }
 .pamphlet__front__img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   height: 25rem;
